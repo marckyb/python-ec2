@@ -56,16 +56,3 @@ for instance in instances:
     print(f'Instance {instance.id} launched with a 20GB volume and HTTP server.')
 
    
-   
-import boto3
-
-# Create an ec2 client
-
-ec2 = boto3.client('ec2')
-
-# Stop the instance
-instance_id = 'i-03d6aea1ba1e292c3'
-
-ec2.stop_instances(InstanceIds=[instance_id])
-
-print(f'Stopped the instance {instance_id}')
