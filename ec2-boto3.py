@@ -21,7 +21,7 @@ instances = ec2_resource.create_instances(
             'Ebs': {
                 'VolumeSize': 20,
                 'VolumeType': 'gp2',
-                'DeleteOnTermination': 'False'
+                'DeleteOnTermination': False
             }
         }
     ],
