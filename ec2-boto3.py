@@ -5,7 +5,7 @@ instances = ec2_resource.create_instances(
     MinCount = 1,
     MaxCount = 1,
     InstanceType = 't2.micro',
-    KeyName = 'ec2boto',
+    KeyName = 'boto',
     BlockDeviceMappings = [
         {
             'DeviceName': '/dev/sda1',
